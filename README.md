@@ -39,36 +39,44 @@ Este projeto visa desenvolver um sistema integrado para gestão de dados univers
 
 ```mermaid
 graph TD
-    style Secretario fill:#e1f5fe
-    style Professor fill:#f3e5f5
-    style Aluno fill:#e8f5e8
-    style Fornecedor fill:#fff3e0
-    style Sistema fill:#fce4ec
+    style Administrador fill:#ffebee
+    style Secretario fill:#e8f5e8
+    style Professor fill:#e3f2fd
+    style Aluno fill:#fff3e0
+    style Fornecedor fill:#f3e5f5
     
-    Secretario["Secretário(a)"] -->|Realiza| CadastroProfessores
-    Secretario -->|Realiza| CadastroAlunos
+    Administrador["Administrador"] --> CadastroProfessores
+    Administrador --> CadastroAlunos
+    Administrador --> CadastroFornecedores
+    Administrador --> CadastroPF
+    Administrador --> CadastroPJ
     
-    Professor["Professor(a)"] -->|Consulta| CadastroAlunos
+    Secretario["Secretário(a)"] --> CadastroProfessores
+    Secretario --> CadastroAlunos
     
-    Aluno["Aluno"] -->|Consulta| CadastroAlunos
+    Professor["Professor(a)"] --> CadastroAlunos
     
-    Fornecedor["Fornecedor"] -->|Realiza| CadastroFornecedores
+    Aluno["Aluno"] --> CadastroAlunos
     
-    Sistema["Sistema"] -->|Gerencia| CadastroPF
-    Sistema -->|Gerencia| CadastroPJ
+    Fornecedor["Fornecedor"] --> CadastroFornecedores
     
-    CadastroProfessores -->|Inclui| CadastroPF
-    CadastroAlunos -->|Inclui| CadastroPF
-    CadastroFornecedores -->|Inclui| CadastroPJ
+    CadastroProfessores -.->|<<include>>| CadastroPF
+    CadastroAlunos -.->|<<include>>| CadastroPF
+    CadastroFornecedores -.->|<<include>>| CadastroPJ
     
-    subgraph "Sistema de Gestão"
+    subgraph "Sistema de Gestão Universitária"
         CadastroPF["Cadastro de Pessoa Física"]
         CadastroPJ["Cadastro de Pessoa Jurídica"]
         CadastroProfessores["Cadastro de Professores"]
         CadastroAlunos["Cadastro de Alunos"]
         CadastroFornecedores["Cadastro de Fornecedores"]
     end
+    
+    %% Estilo das setas
+    linkStyle 8,9,10 stroke:#ff6b6b,stroke-width:2px,stroke-dasharray: 5 5
+    linkStyle 0,1,2,3,4,5,6,7 stroke:#2e86ab,stroke-width:2px
 ```
+
 ## 📘 Diagrama de Classes – Gestão de Dados Universitária
 ![Diagrama de Classes](./docs/diagrama-classes.png)
 
