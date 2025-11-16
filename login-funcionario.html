@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Funcionário</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #333; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background-color: #444; border-radius: 8px; padding: 20px 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); width: 300px; }
+        h2 { text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #666; background-color: #555; color: white; border-radius: 4px; }
+        .btn { display: block; width: 100%; background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 5px; text-decoration: none; font-size: 16px; text-align: center; cursor: pointer; }
+        .btn:hover { background-color: #0056b3; }
+        .back-link { display: block; text-align: center; margin-top: 15px; color: #aaa; text-decoration: none; }
+        .back-link:hover { color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>LOGIN FUNCIONÁRIO</h2>
+        <form action="area-professor.html">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+        <a href="index.html" class="back-link">Voltar</a>
+    </div>
+</body>
+</html>
