@@ -178,11 +178,23 @@ Aqui estão as principais interfaces desenhadas no projeto:
 
  
 
-## 🔒 TELA DE LOGIN <img width="1920" height="1080" alt="Faculdade Sistema (1)" src="https://github.com/user-attachments/assets/6fbf6045-97d7-4b2f-b035-e10323b3179c" />
+## 🔒 TELA DE LOGIN 
+<img width="1920" height="1080" alt="Faculdade Sistema (1)" src="https://github.com/user-attachments/assets/6fbf6045-97d7-4b2f-b035-e10323b3179c" />
 
-## 🏠 TELA HOME <img width="1920" height="1080" alt="Admin Dashboard (1)" src="https://github.com/user-attachments/assets/671d9c32-d0c1-4d4d-bbe1-ae2c0eec41b2" />
+## 🏠 TELA HOME 
+<img width="1920" height="1080" alt="Admin Dashboard (1)" src="https://github.com/user-attachments/assets/671d9c32-d0c1-4d4d-bbe1-ae2c0eec41b2" />
 
-## 👤 TELA PERFIL <img width="1920" height="1080" alt="Admin Dashboard 2" src="https://github.com/user-attachments/assets/fbfccde7-1e83-44fe-bcf6-9c33a0663833" />
+## 👤 TELA CADASTRAR ADM 
+<img width="1920" height="1080" alt="Admin Dashboard 2" src="https://github.com/user-attachments/assets/fbfccde7-1e83-44fe-bcf6-9c33a0663833" />
+
+## 📦 TELA FORNECEDOR
+<img width="1920" height="1080" alt="Forn Dashboard" src="https://github.com/user-attachments/assets/714f180b-3a39-4e08-9ae7-c8155bedbf0b" />
+
+## 🧑‍🏫 TELA PROFESSOR
+<img width="1920" height="1080" alt="Prof Dashboard" src="https://github.com/user-attachments/assets/73b725dc-a63c-4a98-a6d0-22e1b782184c" />
+
+## 🎓 TELA ALUNO 
+<img width="1920" height="1080" alt="Aluno Dashnoard" src="https://github.com/user-attachments/assets/e237dfbb-e582-4cab-be9e-3475864601c3" />
 
 ## 🛠️ Como visualizar este projeto
 
