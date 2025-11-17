@@ -15,8 +15,8 @@ Este projeto visa desenvolver um sistema integrado para gestão de dados univers
 | Responsável | GitHub |
 |-------------|---------|
 | Israel Felipe Chaves da Silva | @Raelmat |
-| Kayque Pardim dos Santos | [@github] |
-| Marcus Vinícius Campos Machado | [@github] |
+| Kayque Pardim dos Santos | @kayque-pardim |
+| Marcus Vinícius Campos Machado | @marcusmachado91 |
 | Nathan de Sales Messias | @NathanosPregui |
 | Robson Silva de Pinho | [@github] |
 
