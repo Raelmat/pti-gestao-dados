@@ -172,3 +172,28 @@ classDiagram
     
     PessoaJuridica <|-- Fornecedor
 ```
+## 📱 Telas Principais
+
+Aqui estão as principais interfaces desenhadas no projeto:
+
+ 
+
+## 🔒 TELA DE LOGIN <img width="1920" height="1080" alt="Faculdade Sistema (1)" src="https://github.com/user-attachments/assets/6fbf6045-97d7-4b2f-b035-e10323b3179c" />
+
+## 🏠 TELA HOME <img width="1920" height="1080" alt="Admin Dashboard (1)" src="https://github.com/user-attachments/assets/671d9c32-d0c1-4d4d-bbe1-ae2c0eec41b2" />
+
+## 👤 TELA PERFIL <img width="1920" height="1080" alt="Admin Dashboard 2" src="https://github.com/user-attachments/assets/fbfccde7-1e83-44fe-bcf6-9c33a0663833" />
+
+## 🛠️ Como visualizar este projeto
+
+1. Acesse o link do protótipo navegável: [**🔗 Clique aqui para ver no Figma**](https://www.figma.com/design/ry2DuZIYmvmNpmPkfl0Cmz/Untitled?node-id=1-300&t=ATJYSIwsVrCSXU4v-1)
+2. Navegue entre as telas clicando nos hotspots interativos.
+3. Utilize o modo "Comentários" (tecla C) se quiser deixar feedback.
+
+---
+
+## 🤝 Contribuição
+
+Este projeto foi desenvolvido para fins de estudo/trabalho. Sinta-se à vontade para duplicar o arquivo e explorar as camadas.
+
+---
