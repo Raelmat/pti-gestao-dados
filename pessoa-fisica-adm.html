@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastros ADM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <div class="sidebar">
+      <h2><i class="fas fa-user-cog"></i> ADMIN</h2>
+      <a href="dashboard.html"><i class="fas fa-home"></i> Início</a>
+      <a href="pessoa-fisica-adm.html" class="active"><i class="fas fa-users-cog"></i> Cadastros</a>
+      <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </div>
+    <div class="main-content">
+      <div class="container">
+        <div class="card">
+          <h2>Cadastros ADM</h2>
+          <div class="form-grid">
+            <div class="form-card">
+              <h3>Aluno</h3>
+              <a href="cadastro-aluno.html" class="btn-cadastrar">Cadastrar</a>
+            </div>
+            <div class="form-card">
+              <h3>Professor</h3>
+              <a href="cadastro-professor.html" class="btn-cadastrar">Cadastrar</a>
+            </div>
+            <div class="form-card">
+              <h3>Secretário</h3>
+              <a href="cadastro-secretario.html" class="btn-cadastrar">Cadastrar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>

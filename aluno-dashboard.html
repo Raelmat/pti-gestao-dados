@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas e Frequências</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <div class="sidebar">
+      <h2><i class="fas fa-user-graduate"></i> ALUNO</h2>
+      <a href="dashboard.html"><i class="fas fa-home"></i> Início</a>
+      <a href="aluno-dashboard.html" class="active"><i class="fas fa-clipboard-check"></i> Notas e Frequências</a>
+      <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </div>
+    <div class="main-content">
+      <div class="container">
+        <!-- NOTAS -->
+        <div class="card">
+          <h2><i class="fas fa-clipboard-check"></i> Minhas Notas</h2>
+          <table class="tabela-notas">
+            <thead>
+              <tr>
+                <th>Disciplina</th>
+                <th>N1</th>
+                <th>N2</th>
+                <th>Média</th>
+                <th>Situação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Matemática</td>
+                <td>8.5</td>
+                <td>7.0</td>
+                <td><strong>7.8</strong></td>
+                <td class="aprovado">Aprovado</td>
+              </tr>
+              <tr>
+                <td>Português</td>
+                <td>6.0</td>
+                <td>5.5</td>
+                <td><strong>5.8</strong></td>
+                <td class="recuperacao">Recuperação</td>
+              </tr>
+              <tr>
+                <td>História</td>
+                <td>9.0</td>
+                <td>8.5</td>
+                <td><strong>8.8</strong></td>
+                <td class="aprovado">Aprovado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- FREQUÊNCIA -->
+        <div class="card">
+          <h2><i class="fas fa-calendar-check"></i> Minha Frequência</h2>
+          <div class="form-card">
+            <div class="freq-item">
+              <span><strong>Total de Aulas:</strong></span>
+              <span>60</span>
+            </div>
+            <div class="freq-item">
+              <span><strong>Faltas:</strong></span>
+              <span>4</span>
+            </div>
+            <div class="freq-item destaque">
+              <span><strong>Frequência:</strong></span>
+              <span><strong style="color:#4CAF50;">93.3%</strong></span>
+            </div>
+            <div class="barra-frequencia">
+              <div style="width: 93.3%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>

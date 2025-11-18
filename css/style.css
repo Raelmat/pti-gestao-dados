@@ -1,0 +1,32 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:Arial, sans-serif; background:#1a1a1a; color:#eee; }
+.login-page { display:flex; align-items:center; justify-content:center; min-height:100vh; }
+.login-container { width:400px; max-width:90%; }
+.layout { display:flex; min-height:100vh; }
+.sidebar { width:250px; background:#2c2c2c; padding:20px; position:fixed; height:100vh; overflow-y:auto; }
+.sidebar h2 { color:#bb86fc; text-align:center; margin-bottom:30px; font-size:1.4rem; }
+.sidebar a { display:block; color:#ddd; padding:12px; margin:5px 0; border-radius:8px; text-decoration:none; transition:0.3s; }
+.sidebar a:hover, .sidebar a.active { background:#bb86fc; color:white; }
+.sidebar .logout { margin-top:auto; }
+.main-content { flex:1; margin-left:250px; padding:20px; }
+.container { max-width:1200px; margin:0 auto; }
+.card { background:#2c2c2c; padding:20px; margin:20px 0; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); }
+.card h2 { color:#bb86fc; margin-bottom:15px; display:flex; align-items:center; gap:8px; }
+.form-card { background:#3a3a3a; padding:20px; border-radius:10px; border:1px solid #555; }
+input, select { width:100%; padding:10px; margin:8px 0; background:#4a4a4a; border:1px solid #666; border-radius:6px; color:#eee; }
+.btn-cadastrar { background:#2196F3; color:white; border:none; padding:12px; width:100%; border-radius:6px; cursor:pointer; font-weight:bold; }
+.btn-cadastrar:hover { background:#1976D2; }
+.tabela-notas { width:100%; border-collapse:collapse; margin-top:10px; }
+.tabela-notas th, .tabela-notas td { padding:12px; text-align:center; border-bottom:1px solid #666; }
+.tabela-notas th { background:#4a4a4a; }
+.aprovado { color:#4CAF50; }
+.recuperacao { color:#FF9800; }
+.barra { background:#444; height:20px; border-radius:10px; overflow:hidden; margin-top:10px; }
+.barra > div { background:#4CAF50; height:100%; }
+.dicas { margin-top:15px; font-size:0.9rem; color:#aaa; }
+@media (max-width:992px) {
+  .sidebar { width:80px; }
+  .sidebar h2, .sidebar a span { display:none; }
+  .sidebar a { text-align:center; font-size:1.5rem; }
+  .main-content { margin-left:80px; }
+}

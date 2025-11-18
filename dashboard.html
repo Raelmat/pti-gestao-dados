@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <div class="sidebar">
+      <h2><i class="fas fa-user"></i> <span id="usuarioNome"></span></h2>
+      <a href="dashboard.html" class="active"><i class="fas fa-home"></i> Início</a>
+      <div id="menuItens"></div>
+      <a href="#" onclick="logout()" class="logout"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </div>
+    <div class="main-content">
+      <div class="container">
+        <div class="card">
+          <h2>Bem-vindo, <span id="tipoUsuario"></span>!</h2>
+          <p>Selecione uma opção no menu lateral.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+  <script>
+    if (!estaLogado()) window.location.href = 'index.html';
+    const user = getUsuario();
+    document.getElementById('usuarioNome').textContent = user.tipo.toUpperCase();
+    document.getElementById('tipoUsuario').textContent = user.tipo;
+
+    const menus = {
+      aluno: [{icon:'clipboard-check', text:'Minhas Notas', href:'aluno-dashboard.html'}],
+      professor: [
+        {icon:'edit', text:'Lançar Notas', href:'professor-dashboard.html'},
+        {icon:'users', text:'Alunos', href:'lista-alunos.html'}
+      ],
+      fornecedor: [{icon:'boxes', text:'Meus Produtos', href:'fornecedor-dashboard.html'}],
+      admin: [
+        {icon:'user-cog', text:'Cadastros ADM', href:'pessoa-fisica-adm.html'},
+        {icon:'truck', text:'Fornecedores', href:'fornecedor.html'}
+      ]
+    };
+
+    const itens = (menus[user.tipo] || []).map(m => 
+      `<a href="${m.href}"><i class="fas fa-${m.icon}"></i> ${m.text}</a>`
+    ).join('');
+    document.getElementById('menuItens').innerHTML = itens;
+  </script>
+</body>
+</html>
